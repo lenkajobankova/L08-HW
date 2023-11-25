@@ -13,6 +13,7 @@ import java.util.Scanner;
 @RestController()
 @RequestMapping("/texts")
 public class TextController {
+
     @GetMapping("/scifi")
     public String printScifi(){
         return loadFromFile(Settings.FilenameScifi());
